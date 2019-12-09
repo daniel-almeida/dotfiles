@@ -336,6 +336,34 @@
                                 "type": "basic"
                             }
                         ]
+                    },
+                    {
+                        "description": "FN + space => esc",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "fn pressed",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "spacebar",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "escape"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
                     }
                 ]
             },
